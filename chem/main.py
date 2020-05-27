@@ -1,10 +1,13 @@
 import math
 import ka_calculations
 import kb_calculations
+import titrations
 
 while True:
-      response = input("1: Calculations involving Ka (Weak Acid)\n"
-                       "2: Calculations involving Kb (Weak Base)\n")
+      response = input("\n1: Calculations involving Ka (Weak Acid)\n"
+                       "2: Calculations involving Kb (Weak Base)\n"
+                       "3: Titrations\n"
+                       "q: Quit\n")
 
       # Calculations involving Ka
       if response == '1':
@@ -84,14 +87,10 @@ while True:
                   elif response == 'q':
                         break
 
+      # Calculations involving titrations
+      elif response == '3':
+            titrations.titrate()
 
-
-
-
-
-
-
-
-
-
+      elif response == 'q':
+            break
 

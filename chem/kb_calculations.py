@@ -63,7 +63,7 @@ def find_st_conc(pH, Ka):
     final1 = "{:e}".format(st_conc)
     print(f"Starting Concentration = {final1}M\n")
 
-    additional = input("Do you require mass of molecules in solution? (y/n)\n")
+    additional = input("Do you require mass of molecules in solution? (y/n): ")
 
     if additional == 'y':
         molar_mass = float(input("What is the grams/moles? Give the grams: "))
